@@ -38,7 +38,10 @@ export const heroSlides: HeroSlide[] = [
   {
     id: 'coralra',
     title: 'Coralra',
-    subtitle: '',
+    subtitle: "Aims to elevate users' eco-awareness, so as to ease and fix the incoming extinction of coral species.",
+    image: `${import.meta.env.BASE_URL}coralra-hero.jpg`,
+    alt: 'Coralra vessel with a coral silhouette',
+    sentence: true,
   },
   {
     id: 'xbloom',

@@ -1,25 +1,63 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { heroSlides } from '../data.ts'
+
+const intervalMs = 5000
 
 export function Hero() {
   const [active, setActive] = useState(0)
-  const slide = heroSlides[active]
-  const media = slide.image ? (
-    <img className="hero-photo" src={slide.image} alt={slide.alt ?? ''} />
-  ) : (
-    <div className="placeholder" role="img" aria-label={`${slide.title} media placeholder`} />
-  )
+  const [paused, setPaused] = useState(false)
+
+  useEffect(() => {
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)')
+    if (paused || media.matches) return
+    const id = window.setInterval(() => {
+      setActive((current) => (current + 1) % heroSlides.length)
+    }, intervalMs)
+    return () => window.clearInterval(id)
+  }, [paused, active])
 
   return (
-    <section className="hero" aria-label="Featured projects">
-      <div className="hero-card">
-        {slide.href ? (
-          <a className="hero-link" href={slide.href} target="_blank" rel="noreferrer">
-            {media}
-          </a>
-        ) : (
-          media
-        )}
+    <section className="hero" aria-label="Featured projects" aria-roledescription="carousel">
+      <div
+        className="hero-card"
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+      >
+        <div className="hero-stage">
+          {heroSlides.map((item, index) => {
+            const on = index === active
+            const photo = item.image ? (
+              <img className="hero-photo" src={item.image} alt={on ? (item.alt ?? '') : ''} />
+            ) : (
+              <div
+                className="placeholder"
+                role="img"
+                aria-label={on ? `${item.title} media placeholder` : undefined}
+              />
+            )
+            const className = on ? 'hero-layer on' : 'hero-layer'
+            if (item.href) {
+              return (
+                <a
+                  key={item.id}
+                  className={`${className} hero-link`}
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  tabIndex={on ? 0 : -1}
+                  aria-hidden={!on}
+                >
+                  {photo}
+                </a>
+              )
+            }
+            return (
+              <div key={item.id} className={className} aria-hidden={!on}>
+                {photo}
+              </div>
+            )
+          })}
+        </div>
         <div className="hero-tabs" role="tablist" aria-label="Featured projects">
           {heroSlides.map((item, index) => (
             <button
