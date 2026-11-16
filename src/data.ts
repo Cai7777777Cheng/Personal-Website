@@ -39,12 +39,17 @@ export type Work = {
   title: string
   subtitle: string
   href?: string
+  image?: string
 }
 
 export const workRows: Work[][] = [
   [
-    { title: 'xBloom Studio', subtitle: 'Ultimate machine for speciality coffee' },
-    { title: 'xBloom Original', subtitle: 'All new speciality coffee Experience' },
+    {
+      title: 'Nomo',
+      subtitle: 'Tabletop project',
+      href: nomoUrl,
+      image: `${import.meta.env.BASE_URL}nomo-hero.jpg`,
+    },
     { title: 'PEBBLE', subtitle: 'Work-life balance communication' },
   ],
   [
@@ -61,9 +66,3 @@ export const workRows: Work[][] = [
     { title: 'BD Spot', subtitle: 'electric screwdriver' },
   ],
 ]
-
-export const nomoWork: Work = {
-  title: 'Nomo',
-  subtitle: 'Tabletop companion',
-  href: nomoUrl,
-}

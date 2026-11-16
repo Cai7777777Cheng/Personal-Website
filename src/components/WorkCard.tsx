@@ -8,10 +8,16 @@ export function WorkCard({ work }: { work: Work }) {
     </span>
   )
 
+  const media = work.image ? (
+    <img className="card-photo" src={work.image} alt="" />
+  ) : (
+    <span className="placeholder" role="img" aria-label={`${work.title} placeholder`} />
+  )
+
   if (work.href) {
     return (
       <a className="card card-link" href={work.href} target="_blank" rel="noreferrer">
-        <span className="placeholder" role="img" aria-label={`${work.title} placeholder`} />
+        {media}
         {copy}
       </a>
     )
@@ -19,7 +25,7 @@ export function WorkCard({ work }: { work: Work }) {
 
   return (
     <article className="card">
-      <span className="placeholder" role="img" aria-label={`${work.title} placeholder`} />
+      {media}
       {copy}
     </article>
   )

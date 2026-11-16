@@ -227,7 +227,7 @@ button { font: inherit; color: inherit; }
 }
 .works-row > * { min-width: 0; min-height: 0; }
 .row-a {
-  grid-template-columns: 696fr 471fr 668fr;
+  grid-template-columns: minmax(0, 1fr) calc((100% - 2 * var(--gap)) * 668 / 1835);
   aspect-ratio: 1865 / 748;
 }
 .row-b {
@@ -238,13 +238,6 @@ button { font: inherit; color: inherit; }
   grid-template-columns: 618fr 608fr 608fr;
   aspect-ratio: 1864 / 799;
 }
-.row-nomo {
-  grid-template-columns: 1fr 1fr;
-  aspect-ratio: auto;
-  margin-bottom: 0;
-}
-.row-nomo .card { aspect-ratio: 928 / 599; }
-
 .card {
   position: relative;
   display: block;
@@ -255,8 +248,16 @@ button { font: inherit; color: inherit; }
   color: var(--ink);
 }
 .card-link { cursor: pointer; }
-.card-link:hover { background: #b7b7b7; }
 .card-link:hover .placeholder { background: #b7b7b7; }
+.card-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card-link:hover .card-photo { filter: brightness(0.97); }
 .card-copy {
   position: absolute;
   z-index: 1;
@@ -416,13 +417,11 @@ button { font: inherit; color: inherit; }
   .works-row,
   .row-a,
   .row-b,
-  .row-c,
-  .row-nomo {
+  .row-c {
     grid-template-columns: 1fr;
     aspect-ratio: auto;
   }
-  .card,
-  .row-nomo .card { height: auto; aspect-ratio: 16 / 10; }
+  .card { height: auto; aspect-ratio: 16 / 10; }
   .contact {
     margin: 72px 12px 0;
   }

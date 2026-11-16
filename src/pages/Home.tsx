@@ -1,6 +1,6 @@
 import { Hero } from '../components/Hero.tsx'
 import { WorkCard } from '../components/WorkCard.tsx'
-import { email, mapsUrl, nomoWork, phoneDisplay, phoneHref, workRows } from '../data.ts'
+import { email, mapsUrl, phoneDisplay, phoneHref, workRows } from '../data.ts'
 
 const rowClass = ['row-a', 'row-b', 'row-c', 'row-b']
 
@@ -26,9 +26,6 @@ export function Home() {
             ))}
           </div>
         ))}
-        <div className="works-row row-nomo">
-          <WorkCard work={nomoWork} />
-        </div>
       </section>
 
       <section className="contact" id="contact">
