@@ -131,6 +131,19 @@ button { font: inherit; color: inherit; }
   inset: 0;
   background: var(--placeholder);
 }
+.hero-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 .soon {
   position: absolute;
   z-index: 2;
@@ -186,6 +199,12 @@ button { font: inherit; color: inherit; }
   line-height: 1.2;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+.hero-sub.sentence {
+  font-size: 12px;
+  line-height: 1.35;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .kicker {

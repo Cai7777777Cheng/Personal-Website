@@ -8,30 +8,42 @@ export const phoneHref = 'tel:+46724437299'
 export const mapsUrl =
   'https://www.google.com/maps/search/?api=1&query=%C3%96stra+Strandgatan+30%2C+90333+Umea%2C+Sweden'
 
-export const heroSlides = [
+type HeroSlide = {
+  id: string
+  title: string
+  subtitle: string
+  image?: string
+  alt?: string
+  href?: string
+  sentence?: boolean
+}
+
+export const heroSlides: HeroSlide[] = [
   {
-    id: 'pebble',
-    title: 'PEBBLE',
-    subtitle: 'Cisco for your work and life balance',
-    soon: false,
+    id: 'nomo',
+    title: 'NOMO',
+    subtitle: 'Tabletop companion',
+    image: `${import.meta.env.BASE_URL}nomo-hero.jpg`,
+    alt: 'Nomo on the table between two players',
+    href: nomoUrl,
   },
   {
-    id: 'cuda',
-    title: 'CUDA',
-    subtitle: 'Underground mining safety',
-    soon: true,
+    id: 'hapticlink',
+    title: 'HAPTICLINK',
+    subtitle: 'Helps visually impaired individuals experience mainstream visual games.',
+    image: `${import.meta.env.BASE_URL}hapticlink-hero.jpg`,
+    alt: 'HapticLink headband and wrist band',
+    sentence: true,
   },
   {
-    id: 'mori',
-    title: 'MORI',
-    subtitle: 'Home robot and nature companion',
-    soon: false,
+    id: 'coralra',
+    title: 'Coralra',
+    subtitle: '',
   },
   {
     id: 'xbloom',
     title: 'xBloom Studio',
     subtitle: 'Ultimate speciality coffee',
-    soon: false,
   },
 ]
 
