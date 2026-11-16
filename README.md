@@ -2,7 +2,9 @@
 
 Personal homepage for Yuan Hong. One scrolling page: a featured project well, an about statement, selected works, contact, and a footer. Built with the same form as [Nomo](https://nomo-tabletop.deed.page/): Vite, React, TypeScript, and React Router.
 
-Live site: https://cai7777777cheng.github.io/Personal-Website/
+Project site: https://cai7777777cheng.github.io/Personal-Website/
+
+That address starts serving after GitHub Pages is turned on for this repo (Settings → Pages → Build and deployment → GitHub Actions). The workflow is already in `.github/workflows/pages.yml`. Until that switch is on, a temporary preview is at https://genetics-experiences-rico-very.trycloudflare.com/
 
 Photographs and video from the reference layout are not used. Every media frame is a flat gray placeholder. The Nomo card opens the live product site: https://nomo-tabletop.deed.page/
 
