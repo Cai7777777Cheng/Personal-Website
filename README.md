@@ -6,7 +6,7 @@ Project site: https://cai7777777cheng.github.io/Personal-Website/
 
 That address starts serving after GitHub Pages is turned on for this repo (Settings → Pages → Build and deployment → GitHub Actions). The workflow is already in `.github/workflows/pages.yml`. Until that switch is on, a temporary preview is at https://genetics-experiences-rico-very.trycloudflare.com/
 
-Photographs and video from the reference layout are not used. The Nomo card in Selected Works uses the project photo and opens https://nomo-tabletop.deed.page/. The other media frames are flat gray placeholders.
+Photographs and video from the reference layout are not used. The hero opens on Nomo, then HapticLink, Coralra, and xBloom Studio. Nomo in the hero and in Selected Works opens https://nomo-tabletop.deed.page/. Coralra and the other project frames stay gray placeholders.
 
 ## Run locally
 
