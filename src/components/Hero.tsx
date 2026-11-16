@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { heroSlides } from '../data.ts'
 
-const intervalMs = 5000
+const intervalMs = Math.round(5000 * (2 / 3))
 
 export function Hero() {
   const [active, setActive] = useState(0)
