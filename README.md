@@ -1,6 +1,6 @@
-# YUAN HONG
+# PENG CHENGXU
 
-Personal homepage for Yuan Hong. One scrolling page: a featured project well, an about statement, selected works, contact, and a footer. Built with the same form as [Nomo](https://nomo-tabletop.deed.page/): Vite, React, TypeScript, and React Router.
+Personal homepage for Peng Chengxu. One scrolling page: a featured project well, an about statement, selected works, contact, and a footer. Built with the same form as [Nomo](https://nomo-tabletop.deed.page/): Vite, React, TypeScript, and React Router.
 
 Project site: https://cai7777777cheng.github.io/Personal-Website/
 

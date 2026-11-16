@@ -10,7 +10,7 @@ function ScrollWithRoute() {
   const { pathname, hash } = useLocation()
 
   useEffect(() => {
-    document.title = pathname.startsWith('/terms') ? 'Terms & Privacy — YUAN HONG' : 'YUAN HONG'
+    document.title = pathname.startsWith('/terms') ? 'Terms & Privacy — PENG CHENGXU' : 'PENG CHENGXU'
     const root = document.documentElement
     const previous = root.style.scrollBehavior
     root.style.scrollBehavior = 'auto'

@@ -4,7 +4,7 @@ import { email, instagramUrl, linkedinUrl, phoneHref } from '../data.ts'
 export function Footer() {
   return (
     <footer className="footer">
-      <p className="copyright">©2026 yUAN HONG</p>
+      <p className="copyright">©2026 PENG CHENGXU</p>
       <div className="footer-cols">
         <div>
           <p>Follow</p>

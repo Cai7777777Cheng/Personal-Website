@@ -27,7 +27,7 @@ export function Nav() {
         About
       </Link>
       <Link className="mark" to="/">
-        YUAN HONG
+        PENG CHENGXU
       </Link>
       <Link className="nav-contact" to="/#contact">
         Contact
