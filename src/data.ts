@@ -63,17 +63,17 @@ export const workRows: Work[][] = [
       image: `${import.meta.env.BASE_URL}nomo-hero.jpg`,
     },
     {
-      title: 'HAPTICLINK',
-      subtitle: 'Helps visually impaired individuals experience mainstream visual games.',
-      image: `${import.meta.env.BASE_URL}hapticlink-hero.jpg`,
-    },
-  ],
-  [
-    {
       title: 'Coralra',
       subtitle:
         "Aims to elevate users' eco-awareness, so as to ease and fix the incoming extinction of coral species.",
       image: `${import.meta.env.BASE_URL}coralra-hero.jpg`,
+    },
+  ],
+  [
+    {
+      title: 'HAPTICLINK',
+      subtitle: 'Helps visually impaired individuals experience mainstream visual games.',
+      image: `${import.meta.env.BASE_URL}hapticlink-card.jpg`,
     },
     { title: 'xBloom Studio', subtitle: 'Ultimate speciality coffee' },
   ],
