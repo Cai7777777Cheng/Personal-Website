@@ -1,4 +1,5 @@
-export const nomoUrl = 'https://nomo-tabletop.deed.page/'
+export const nomoUrl =
+  'https://cai7777777cheng.github.io/Cai7777777Cheng-table-game-robot-website/'
 
 export const instagramUrl = 'https://www.instagram.com/alex_yuan_na/'
 export const linkedinUrl = 'https://www.linkedin.com/in/yuan-hong-022736181/'
@@ -71,13 +72,53 @@ export const workRows: Work[][] = [
     { title: 'NORA', subtitle: 'Multigen family privacy and comfort' },
     { title: 'Mori', subtitle: 'Home Robot & Nature Companion' },
   ],
-  [
-    { title: 'Xiaomi Portable Vacuum', subtitle: 'Less mess More freedom' },
-    { title: 'DIMSUM', subtitle: 'Culture inspired furniture series' },
-    { title: 'Next Gen Robot Vacuum', subtitle: 'innovative robot vacuum cleaning solution' },
-  ],
-  [
-    { title: 'CUDA', subtitle: 'Underground mining safety system' },
-    { title: 'BD Spot', subtitle: 'electric screwdriver' },
-  ],
+]
+
+export type ProfileRow = {
+  place: string
+  detail: string
+  when: string
+  href?: string
+}
+
+export const educationRows: ProfileRow[] = [
+  {
+    place: 'The Hong Kong Polytechnic University',
+    detail: 'MDes Intelligent Service Design',
+    when: '2027.03',
+  },
+  {
+    place: 'Dalian University of Technology',
+    detail: 'BEng Industrial Design',
+    when: '2025.06',
+  },
+]
+
+export const experienceRows: ProfileRow[] = [
+  {
+    place: 'SF Technology',
+    detail: 'Product Manager Intern',
+    when: '2026-now',
+  },
+  {
+    place: 'Shokz',
+    detail: 'Industrial Designer',
+    when: '2026',
+  },
+  {
+    place: 'Nomo',
+    detail: 'Tabletop companion and generative UX',
+    when: '2026-now',
+    href: nomoUrl,
+  },
+  {
+    place: 'SF Express × Wondermore',
+    detail: 'Low-altitude outdoor service',
+    when: '2025',
+  },
+  {
+    place: 'PetaLife',
+    detail: 'Pet health and fresh-food UX',
+    when: '2025',
+  },
 ]

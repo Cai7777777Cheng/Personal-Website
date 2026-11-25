@@ -2,7 +2,7 @@ import { Hero } from '../components/Hero.tsx'
 import { WorkCard } from '../components/WorkCard.tsx'
 import { email, mapsUrl, phoneDisplay, phoneHref, workRows } from '../data.ts'
 
-const rowClass = ['row-a', 'row-b', 'row-c', 'row-b']
+const rowClass = ['row-a', 'row-b']
 
 export function Home() {
   return (
@@ -10,14 +10,17 @@ export function Home() {
       <Hero />
 
       <section className="about" id="about">
-        <p className="kicker">About</p>
-        <h1>
-          An industrial designer, brings ideas into commercial and social impact by delivering
-          physical and digital experiences.
-        </h1>
+        <div className="about-row">
+          <p className="kicker">About</p>
+          <h1>
+            An industrial designer, brings ideas into commercial and social impact by delivering
+            physical and digital experiences.
+          </h1>
+        </div>
       </section>
 
       <section className="works" id="works" aria-label="Selected works">
+        <div className="hairline" />
         <p className="kicker">Selected works</p>
         {workRows.map((row, index) => (
           <div className={`works-row ${rowClass[index]}`} key={row[0].title}>

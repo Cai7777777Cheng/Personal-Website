@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { Footer } from './components/Footer.tsx'
 import { Nav } from './components/Nav.tsx'
+import { About } from './pages/About.tsx'
 import { Home } from './pages/Home.tsx'
 import { Legal } from './pages/Legal.tsx'
 import { Missing } from './pages/Missing.tsx'
@@ -10,7 +11,11 @@ function ScrollWithRoute() {
   const { pathname, hash } = useLocation()
 
   useEffect(() => {
-    document.title = pathname.startsWith('/terms') ? 'Terms & Privacy — PENG CHENGXU' : 'PENG CHENGXU'
+    document.title = pathname.startsWith('/terms')
+      ? 'Terms & Privacy — PENG CHENGXU'
+      : pathname.startsWith('/about')
+        ? 'About — PENG CHENGXU'
+        : 'PENG CHENGXU'
     const root = document.documentElement
     const previous = root.style.scrollBehavior
     root.style.scrollBehavior = 'auto'
@@ -33,6 +38,7 @@ export default function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/terms" element={<Legal />} />
         <Route path="*" element={<Missing />} />
       </Routes>
