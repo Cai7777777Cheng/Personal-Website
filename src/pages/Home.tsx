@@ -1,6 +1,6 @@
 import { Hero } from '../components/Hero.tsx'
 import { WorkCard } from '../components/WorkCard.tsx'
-import { email, mapsUrl, phoneDisplay, phoneHref, workRows } from '../data.ts'
+import { email, phoneDisplay, phoneHref, workRows } from '../data.ts'
 
 const rowClass = ['row-a', 'row-b']
 
@@ -36,11 +36,6 @@ export function Home() {
         <div className="contact-links">
           <a href={phoneHref}>{phoneDisplay}</a>
           <a href={`mailto:${email}`}>{email}</a>
-          <a href={mapsUrl} target="_blank" rel="noreferrer">
-            Östra Strandgatan 30,
-            <br />
-            90333 Umea—&nbsp;Sweden
-          </a>
         </div>
       </section>
     </main>

@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import { Footer } from './components/Footer.tsx'
 import { Nav } from './components/Nav.tsx'
 import { About } from './pages/About.tsx'
 import { Home } from './pages/Home.tsx'
@@ -42,7 +41,6 @@ export default function App() {
         <Route path="/terms" element={<Legal />} />
         <Route path="*" element={<Missing />} />
       </Routes>
-      <Footer />
     </>
   )
 }

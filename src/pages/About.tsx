@@ -43,7 +43,13 @@ function ProfileTable({
 export function About() {
   return (
     <main className="profile">
-      <p className="resume-label">Download Resume</p>
+      <a
+        className="resume-label"
+        href={`${import.meta.env.BASE_URL}Peng-Chengxu-Resume.pdf`}
+        download="Peng-Chengxu-Resume.pdf"
+      >
+        Download Resume
+      </a>
       <ProfileTable id="education-label" label="Education" rows={educationRows} />
       <ProfileTable id="experience-label" label="Experience" rows={experienceRows} />
     </main>

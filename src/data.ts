@@ -1,13 +1,9 @@
 export const nomoUrl =
   'https://cai7777777cheng.github.io/Cai7777777Cheng-table-game-robot-website/'
 
-export const instagramUrl = 'https://www.instagram.com/alex_yuan_na/'
-export const linkedinUrl = 'https://www.linkedin.com/in/yuan-hong-022736181/'
-export const email = 'design.by.yuan@gmail.com'
-export const phoneDisplay = '+46(0)72 443 72 99'
-export const phoneHref = 'tel:+46724437299'
-export const mapsUrl =
-  'https://www.google.com/maps/search/?api=1&query=%C3%96stra+Strandgatan+30%2C+90333+Umea%2C+Sweden'
+export const email = '2867798209@qq.com'
+export const phoneDisplay = '+86 13701898886'
+export const phoneHref = 'tel:+8613701898886'
 
 type HeroSlide = {
   id: string
@@ -66,11 +62,20 @@ export const workRows: Work[][] = [
       href: nomoUrl,
       image: `${import.meta.env.BASE_URL}nomo-hero.jpg`,
     },
-    { title: 'PEBBLE', subtitle: 'Work-life balance communication' },
+    {
+      title: 'HAPTICLINK',
+      subtitle: 'Helps visually impaired individuals experience mainstream visual games.',
+      image: `${import.meta.env.BASE_URL}hapticlink-hero.jpg`,
+    },
   ],
   [
-    { title: 'NORA', subtitle: 'Multigen family privacy and comfort' },
-    { title: 'Mori', subtitle: 'Home Robot & Nature Companion' },
+    {
+      title: 'Coralra',
+      subtitle:
+        "Aims to elevate users' eco-awareness, so as to ease and fix the incoming extinction of coral species.",
+      image: `${import.meta.env.BASE_URL}coralra-hero.jpg`,
+    },
+    { title: 'xBloom Studio', subtitle: 'Ultimate speciality coffee' },
   ],
 ]
 
@@ -84,7 +89,7 @@ export type ProfileRow = {
 export const educationRows: ProfileRow[] = [
   {
     place: 'The Hong Kong Polytechnic University',
-    detail: 'MDes Intelligent Service Design',
+    detail: 'MDes Smart Service Design',
     when: '2027.03',
   },
   {
@@ -104,21 +109,5 @@ export const experienceRows: ProfileRow[] = [
     place: 'Shokz',
     detail: 'Industrial Designer',
     when: '2026',
-  },
-  {
-    place: 'Nomo',
-    detail: 'Tabletop companion and generative UX',
-    when: '2026-now',
-    href: nomoUrl,
-  },
-  {
-    place: 'SF Express × Wondermore',
-    detail: 'Low-altitude outdoor service',
-    when: '2025',
-  },
-  {
-    place: 'PetaLife',
-    detail: 'Pet health and fresh-food UX',
-    when: '2025',
   },
 ]
