@@ -10,8 +10,8 @@ export function Legal() {
         to create an account.
       </p>
       <p>
-        Project pictures are flat gray placeholders. The Nomo card opens a separate site. Email,
-        phone, Instagram, and LinkedIn links leave this page only when you choose them.
+        Project pictures are flat gray placeholders. The Nomo card opens a separate site. Email
+        and phone links leave this site only when you choose them.
       </p>
       <p>Those services keep their own terms and privacy policies.</p>
       <Link className="text-link" to="/">
