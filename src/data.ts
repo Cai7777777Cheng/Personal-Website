@@ -1,4 +1,4 @@
-export const nomoUrl = 'https://nomo-tabletop.deed.page/'
+export const nomoUrl = 'https://cai7777777cheng.github.io/Cai7777777Cheng-table-game-robot-website/'
 
 export const instagramUrl = 'https://www.instagram.com/alex_yuan_na/'
 export const linkedinUrl = 'https://www.linkedin.com/in/yuan-hong-022736181/'
