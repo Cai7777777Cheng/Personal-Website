@@ -35,7 +35,7 @@ export const heroSlides: HeroSlide[] = [
   {
     id: 'coralra',
     title: 'Coralra',
-    subtitle: "Aims to elevate users' eco-awareness, so as to ease and fix the incoming extinction of coral species.",
+    subtitle: 'Aims to raise eco-awareness and help protect endangered coral species.',
     image: `${import.meta.env.BASE_URL}coralra-hero.jpg`,
     alt: 'Coralra vessel with the Coralra logo',
     sentence: true,
@@ -43,8 +43,7 @@ export const heroSlides: HeroSlide[] = [
   {
     id: 'walkora',
     title: 'Walkora',
-    subtitle:
-      'Helps older adults stay active by making everyday dog walks easier and more consistent.',
+    subtitle: 'Helps older adults stay active with easier everyday dog walks.',
     image: `${import.meta.env.BASE_URL}walkora-hero.jpg`,
     alt: 'Walkora handheld device',
     sentence: true,
@@ -69,8 +68,7 @@ export const workRows: Work[][] = [
     },
     {
       title: 'Coralra',
-      subtitle:
-        "Aims to elevate users' eco-awareness, so as to ease and fix the incoming extinction of coral species.",
+      subtitle: 'Aims to raise eco-awareness and help protect endangered coral species.',
       image: `${import.meta.env.BASE_URL}coralra-card.jpg`,
       onDark: true,
     },
@@ -83,8 +81,7 @@ export const workRows: Work[][] = [
     },
     {
       title: 'Walkora',
-      subtitle:
-        'Helps older adults stay active by making everyday dog walks easier and more consistent.',
+      subtitle: 'Helps older adults stay active with easier everyday dog walks.',
       image: `${import.meta.env.BASE_URL}walkora-hero.jpg`,
     },
   ],
