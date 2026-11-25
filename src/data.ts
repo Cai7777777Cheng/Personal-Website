@@ -37,13 +37,17 @@ export const heroSlides: HeroSlide[] = [
     title: 'Coralra',
     subtitle: "Aims to elevate users' eco-awareness, so as to ease and fix the incoming extinction of coral species.",
     image: `${import.meta.env.BASE_URL}coralra-hero.jpg`,
-    alt: 'Coralra vessel with a coral silhouette',
+    alt: 'Coralra vessel with the Coralra logo',
     sentence: true,
   },
   {
-    id: 'xbloom',
-    title: 'xBloom Studio',
-    subtitle: 'Ultimate speciality coffee',
+    id: 'walkora',
+    title: 'Walkora',
+    subtitle:
+      'Helps older adults stay active by making everyday dog walks easier and more consistent.',
+    image: `${import.meta.env.BASE_URL}walkora-hero.jpg`,
+    alt: 'Walkora handheld device',
+    sentence: true,
   },
 ]
 
@@ -52,6 +56,7 @@ export type Work = {
   subtitle: string
   href?: string
   image?: string
+  onDark?: boolean
 }
 
 export const workRows: Work[][] = [
@@ -66,7 +71,8 @@ export const workRows: Work[][] = [
       title: 'Coralra',
       subtitle:
         "Aims to elevate users' eco-awareness, so as to ease and fix the incoming extinction of coral species.",
-      image: `${import.meta.env.BASE_URL}coralra-hero.jpg`,
+      image: `${import.meta.env.BASE_URL}coralra-card.jpg`,
+      onDark: true,
     },
   ],
   [
@@ -75,7 +81,12 @@ export const workRows: Work[][] = [
       subtitle: 'Helps visually impaired individuals experience mainstream visual games.',
       image: `${import.meta.env.BASE_URL}hapticlink-card.jpg`,
     },
-    { title: 'xBloom Studio', subtitle: 'Ultimate speciality coffee' },
+    {
+      title: 'Walkora',
+      subtitle:
+        'Helps older adults stay active by making everyday dog walks easier and more consistent.',
+      image: `${import.meta.env.BASE_URL}walkora-hero.jpg`,
+    },
   ],
 ]
 

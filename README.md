@@ -6,7 +6,7 @@ Project site: https://cai7777777cheng.github.io/Personal-Website/
 
 That address starts serving after GitHub Pages is turned on for this repo (Settings → Pages → Build and deployment → GitHub Actions). The workflow is already in `.github/workflows/pages.yml`. Until that switch is on, a temporary preview is at https://genetics-experiences-rico-very.trycloudflare.com/
 
-Photographs and video from the reference layout are not used. The hero loops through Nomo, HapticLink, Coralra, and xBloom Studio. Nomo in the hero and in Selected Works opens https://cai7777777cheng.github.io/Cai7777777Cheng-table-game-robot-website/. xBloom Studio stays a gray placeholder.
+Photographs and video from the reference layout are not used. The hero loops through Nomo, HapticLink, Coralra, and Walkora. Nomo in the hero and in Selected Works opens https://cai7777777cheng.github.io/Cai7777777Cheng-table-game-robot-website/. Walkora has no project link.
 
 ## Run locally
 
