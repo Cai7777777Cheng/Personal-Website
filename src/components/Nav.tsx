@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { nomoUrl } from '../data.ts'
 
 const links = [
-  { href: '/#about', label: 'About' },
+  { href: '/about', label: 'About' },
   { href: '/#works', label: 'Selected works' },
   { href: '/#contact', label: 'Contact' },
 ]
@@ -23,7 +23,11 @@ export function Nav() {
 
   return (
     <header className="nav">
-      <Link className="nav-about" to="/#about">
+      <Link
+        className={pathname === '/about' ? 'nav-about is-current' : 'nav-about'}
+        to="/about"
+        aria-current={pathname === '/about' ? 'page' : undefined}
+      >
         About
       </Link>
       <Link className="mark" to="/">
@@ -45,7 +49,12 @@ export function Nav() {
         <div className="menu" id="site-menu">
           <nav aria-label="Menu">
             {links.map((link) => (
-              <Link key={link.href} to={link.href} onClick={() => setOpen(false)}>
+              <Link
+                key={link.href}
+                to={link.href}
+                aria-current={link.href === '/about' && pathname === '/about' ? 'page' : undefined}
+                onClick={() => setOpen(false)}
+              >
                 {link.label}
               </Link>
             ))}
