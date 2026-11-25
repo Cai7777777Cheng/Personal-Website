@@ -2,7 +2,7 @@ import type { Work } from '../data.ts'
 
 export function WorkCard({ work }: { work: Work }) {
   const copy = (
-    <span className="card-copy">
+    <span className={work.onDark ? 'card-copy on-dark' : 'card-copy'}>
       <span className="card-title">{work.title}</span>
       <span className="card-sub">{work.subtitle}</span>
     </span>

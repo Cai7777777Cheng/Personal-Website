@@ -336,6 +336,7 @@ button { font: inherit; color: inherit; }
   flex-direction: column;
   gap: 3px;
 }
+.card-copy.on-dark { color: #fff; }
 .card-title {
   font-family: var(--tight);
   font-size: 15px;
