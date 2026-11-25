@@ -103,11 +103,11 @@ export const experienceRows: ProfileRow[] = [
   {
     place: 'SF Technology',
     detail: 'Product Manager Intern',
-    when: '2026-now',
+    when: '2026.06-2026.10',
   },
   {
     place: 'Shokz',
     detail: 'Industrial Designer',
-    when: '2026',
+    when: '2026.01-2026.04',
   },
 ]
