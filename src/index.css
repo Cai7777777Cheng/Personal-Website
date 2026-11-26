@@ -404,7 +404,7 @@ button { font: inherit; color: inherit; }
 }
 .resume-label {
   display: block;
-  margin: 0 0 133px;
+  margin: 0 0 28px;
   color: #ffb801;
   font-family: var(--mono);
   font-size: 13px;
@@ -412,6 +412,12 @@ button { font: inherit; color: inherit; }
   line-height: 1;
   letter-spacing: 0;
   text-transform: uppercase;
+}
+.about-portrait {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  margin: 0 0 48px;
 }
 .profile-block {
   display: flex;
@@ -509,7 +515,8 @@ button { font: inherit; color: inherit; }
     grid-template-columns: 1fr;
     aspect-ratio: auto;
   }
-  .resume-label { margin-bottom: 48px; }
+  .resume-label { margin-bottom: 20px; }
+  .about-portrait { margin-bottom: 36px; }
   .profile-block { padding-bottom: 80px; }
   .profile-grid { flex-direction: column; gap: 30px; }
   .profile-grid > .kicker,

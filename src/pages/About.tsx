@@ -50,6 +50,13 @@ export function About() {
       >
         Download Resume
       </a>
+      <img
+        className="about-portrait"
+        src={`${import.meta.env.BASE_URL}about-portrait.jpg`}
+        alt="PENG CHENGXU"
+        width={2458}
+        height={1024}
+      />
       <ProfileTable id="education-label" label="Education" rows={educationRows} />
       <ProfileTable id="experience-label" label="Experience" rows={experienceRows} />
     </main>
