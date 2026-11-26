@@ -3,6 +3,8 @@ export const nomoUrl =
 
 export const hapticlinkUrl = 'https://cai7777777cheng.github.io/HapticLink-Website/'
 
+export const walkoraUrl = 'https://cai7777777cheng.github.io/Walkora-website/'
+
 export const email = '2867798209@qq.com'
 export const phoneDisplay = '+86 13701898886'
 export const phoneHref = 'tel:+8613701898886'
@@ -50,6 +52,7 @@ export const heroSlides: HeroSlide[] = [
     subtitle: 'Helps older adults stay active with easier everyday dog walks.',
     image: `${import.meta.env.BASE_URL}walkora-hero.jpg`,
     alt: 'Walkora handheld device',
+    href: walkoraUrl,
     sentence: true,
   },
 ]
@@ -87,6 +90,7 @@ export const workRows: Work[][] = [
     {
       title: 'Walkora',
       subtitle: 'Helps older adults stay active with easier everyday dog walks.',
+      href: walkoraUrl,
       image: `${import.meta.env.BASE_URL}walkora-hero.jpg`,
     },
   ],
