@@ -1,6 +1,8 @@
 export const nomoUrl =
   'https://cai7777777cheng.github.io/Cai7777777Cheng-table-game-robot-website/'
 
+export const hapticlinkUrl = 'https://cai7777777cheng.github.io/HapticLink-Website/'
+
 export const email = '2867798209@qq.com'
 export const phoneDisplay = '+86 13701898886'
 export const phoneHref = 'tel:+8613701898886'
@@ -31,6 +33,7 @@ export const heroSlides: HeroSlide[] = [
     subtitle: 'Helps visually impaired individuals experience mainstream visual games.',
     image: `${import.meta.env.BASE_URL}hapticlink-hero.jpg`,
     alt: 'HapticLink headband and wrist band',
+    href: hapticlinkUrl,
     sentence: true,
   },
   {
@@ -78,6 +81,7 @@ export const workRows: Work[][] = [
     {
       title: 'HAPTICLINK',
       subtitle: 'Helps visually impaired individuals experience mainstream visual games.',
+      href: hapticlinkUrl,
       image: `${import.meta.env.BASE_URL}hapticlink-card.jpg`,
     },
     {
