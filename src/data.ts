@@ -5,6 +5,8 @@ export const hapticlinkUrl = 'https://cai7777777cheng.github.io/HapticLink-Websi
 
 export const walkoraUrl = 'https://cai7777777cheng.github.io/Walkora-website/'
 
+export const coralraUrl = 'https://cai7777777cheng.github.io/Coralra-website/'
+
 export const email = '2867798209@qq.com'
 export const phoneDisplay = '+86 13701898886'
 export const phoneHref = 'tel:+8613701898886'
@@ -44,6 +46,7 @@ export const heroSlides: HeroSlide[] = [
     subtitle: 'Aims to raise eco-awareness and help protect endangered coral species.',
     image: `${import.meta.env.BASE_URL}coralra-hero.jpg`,
     alt: 'Coralra vessel with the Coralra logo',
+    href: coralraUrl,
     sentence: true,
   },
   {
@@ -76,6 +79,7 @@ export const workRows: Work[][] = [
     {
       title: 'Coralra',
       subtitle: 'Aims to raise eco-awareness and help protect endangered coral species.',
+      href: coralraUrl,
       image: `${import.meta.env.BASE_URL}coralra-card.jpg`,
       onDark: true,
     },
