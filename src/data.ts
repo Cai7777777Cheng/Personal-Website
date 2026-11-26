@@ -19,10 +19,11 @@ export const heroSlides: HeroSlide[] = [
   {
     id: 'nomo',
     title: 'NOMO',
-    subtitle: 'Tabletop companion',
+    subtitle: "Feels the table's atmosphere and each player's mood in real time.",
     image: `${import.meta.env.BASE_URL}nomo-hero.jpg`,
     alt: 'Nomo on the table between two players',
     href: nomoUrl,
+    sentence: true,
   },
   {
     id: 'hapticlink',
@@ -62,7 +63,7 @@ export const workRows: Work[][] = [
   [
     {
       title: 'Nomo',
-      subtitle: 'Tabletop project',
+      subtitle: "Feels the table's atmosphere and each player's mood in real time.",
       href: nomoUrl,
       image: `${import.meta.env.BASE_URL}nomo-hero.jpg`,
     },
@@ -98,12 +99,12 @@ export const educationRows: ProfileRow[] = [
   {
     place: 'The Hong Kong Polytechnic University',
     detail: 'MDes Smart Service Design',
-    when: '2027.03',
+    when: '2025.09-2026.11',
   },
   {
     place: 'Dalian University of Technology',
     detail: 'BEng Industrial Design',
-    when: '2025.06',
+    when: '2021.09-2025.06',
   },
 ]
 
@@ -115,7 +116,7 @@ export const experienceRows: ProfileRow[] = [
   },
   {
     place: 'Shokz',
-    detail: 'Industrial Designer',
+    detail: 'Industrial Designer Intern',
     when: '2026.01-2026.04',
   },
 ]
