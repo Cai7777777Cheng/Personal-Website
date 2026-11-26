@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { nomoUrl } from '../data.ts'
 
 const links = [
-  { href: '/about', label: 'About' },
+  { href: '/about', label: 'About me' },
   { href: '/#works', label: 'Selected works' },
   { href: '/#contact', label: 'Contact' },
 ]
@@ -28,7 +28,7 @@ export function Nav() {
         to="/about"
         aria-current={pathname === '/about' ? 'page' : undefined}
       >
-        About
+        About me
       </Link>
       <Link className="mark" to="/">
         PENG CHENGXU
